@@ -1,0 +1,15 @@
+const express = require("express");
+const { addTodo, addTodoGet } = require("../controller/addTodo.js");
+const viewTodo = require("../controller/viewTodo.js");
+const routeError = require("../controller/error.js");
+const { updateTodo, updateTodoGet } = require("../controller/updateTodo.js");
+const deleteTodo = require("../controller/deleteTodo.js");
+const router = express.Router();
+router.post("/addTodo", addTodo);
+router.get("/addTodo", addTodoGet);
+router.post("/updateTodo/:id", updateTodo);
+router.get("/updateTodo/:id", updateTodoGet);
+router.get("/deleteTodo/:id", deleteTodo);
+router.get("/", (req, res) => res.redirect("/viewTodo"));
+router.get("/viewTodo", viewTodo);
+module.exports = router;

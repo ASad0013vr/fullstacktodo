@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    color: white;
+    background: blueviolet;
+}
+#div{
+    background: yellowgreen;
+}
+::-webkit-scrollbar{
+    background: blueviolet;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: yellow;
+}
+button{
+    padding: 10px;
+    font-size: 15px;
+    
+}
+input{
+    text-align: center;
+    font-size: 20px;
+    background-color: yellowgreen;
+    padding: 20px;
+}
+  /* Style for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Gap between grid items */
+  }
+  
+  /* Style for each grid item */
+  .grid-item {
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px;
+    border: 1px solid yellowgreen; /* Border for visual separation */
+    padding: 10px; /* Padding around each item */
+  }
+  

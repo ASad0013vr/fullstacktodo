@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>View Todos</title>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-8">
+      <input
+        type="search"
+        class="text-black p-2 rounded-md shadow-md mb-4 w-full md:w-1/2 lg:w-1/3"
+      />
+      <div class="flex flex-wrap mb-4">
+        <button
+          onclick="printKeyword()"
+          class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md mr-2 mb-2 md:mb-0"
+        >
+          Search
+        </button>
+        <a
+          href="http://localhost:5000/addTodo"
+          class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md mr-2 mb-2 md:mb-0"
+          >Add Todo</a
+        >
+        <p class="ml-auto">
+          <% if (view.length) { %> <%= view.length %> Results Found <% } %>
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% for (each of view) { %>
+        <div class="bg-gray-800 rounded-md p-4 shadow-lg">
+          <h1 class="text-xl font-semibold">
+            <h2 id="title" class="text-2xl"><%= each.title %></h2>
+          </h1>
+          <%= each.description %> <br />Created At :
+          <%=each.created.toLocaleDateString('en-us',{day:'numeric',month:'short',hour:'numeric',minute:'numeric'})%>
+          <br />
+          <div class="flex justify-end mt-4">
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded-md shadow-md mr-2"
+            >
+              <a href="http://localhost:5000/deleteTodo/<%= each._id %>"
+                >Delete</a
+              >
+            </button>
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded-md shadow-md"
+            >
+              <a href="http://localhost:5000/updateTodo/<%=each._id%>"
+                >Update
+              </a>
+            </button>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="/script/script.js"></script>

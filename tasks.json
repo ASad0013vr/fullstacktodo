@@ -1,0 +1,63 @@
+[
+    {
+      "title": "Buy groceries",
+      "description": "Get milk, eggs, bread, and vegetables from the store."
+    },
+    {
+      "title": "Finish report",
+      "description": "Complete the sales report for the last quarter."
+    },
+    {
+      "title": "Call mom",
+      "description": "Check in with mom and wish her a happy birthday."
+    },
+    {
+      "title": "Schedule dentist appointment",
+      "description": "Set up a visit for a regular check-up."
+    },
+    {
+      "title": "Pay bills",
+      "description": "Clear pending utility bills and rent."
+    },
+    {
+      "title": "Gym workout",
+      "description": "Hit the gym for a cardio and strength training session."
+    },
+    {
+      "title": "Read book",
+      "description": "Finish reading 'The Great Gatsby' by F. Scott Fitzgerald."
+    },
+    {
+      "title": "Write blog post",
+      "description": "Draft an article on productivity tips."
+    },
+    {
+      "title": "Organize closet",
+      "description": "Sort and declutter clothes in the wardrobe."
+    },
+    {
+      "title": "Plan weekend getaway",
+      "description": "Research and decide on a location for a short trip."
+    },
+    {
+      "title": "Update resume",
+      "description": "Revise and update professional resume."
+    },
+    {
+      "title": "Practice meditation",
+      "description": "Spend 20 minutes practicing mindfulness meditation."
+    },
+    {
+      "title": "Fix leaky faucet",
+      "description": "Repair the faucet in the kitchen."
+    },
+    {
+      "title": "Watch documentary",
+      "description": "Watch 'Planet Earth II' documentary series."
+    },
+    {
+      "title": "Cook dinner",
+      "description": "Prepare a homemade pasta dish for dinner."
+    }
+  ]
+  
