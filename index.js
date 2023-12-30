@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 mongoose
   .connect(
-    "mongodb+srv://ashishghimire445:zm7oxMXG7GjWI9TD@cluster0.hmwykdz.mongodb.net/todoLists"
+    "mongodb+srv://rashilaramesh270:shErUn3ubsMQML7x@cluster0.sv3anlc.mongodb.net/todoLists"
   )
   .then(() => {
     console.log("connected");
