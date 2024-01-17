@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const methodOverride = require("method-override");
-const port = 8050;
+const port = 5000;
 const mongoose = require("mongoose");
 const router = require("./routes/todo.route");
 const path = require("path");
